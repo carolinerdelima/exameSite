@@ -1,20 +1,58 @@
-<!-- resultado.html -->
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
-  <title>Resultado de Exame</title>
+  <title>Resultado do Exame</title>
+  <style>
+    body {
+      font-family: "Segoe UI", sans-serif;
+      background-color: #f9f9f9;
+      padding: 2rem;
+      text-align: center;
+    }
+
+    .container {
+      background: white;
+      max-width: 600px;
+      margin: auto;
+      padding: 2rem;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      border-radius: 10px;
+    }
+
+    h1 {
+      color: #002856;
+    }
+
+    a.botao {
+      display: inline-block;
+      margin-top: 2rem;
+      background-color: #002856;
+      color: white;
+      padding: 0.8rem 1.5rem;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+
+    iframe {
+      margin-top: 2rem;
+      width: 100%;
+      height: 500px;
+      border: none;
+    }
+  </style>
 </head>
-<body style="font-family: Arial; max-width: 600px; margin: auto; padding: 2rem; background: #f9f9f9;">
-  <h1 style="text-align: center; color: #c11710;">Laboratório Exames+</h1>
-  <hr />
-  <p><strong>Paciente:</strong> Carolina Lima</p>
-  <p><strong>Exame:</strong> Beta HCG Quantitativo</p>
-  <p><strong>Resultado:</strong> <span style="color: green;">POSITIVO</span></p>
-  <p><strong>Valor:</strong> 10.348 mUI/mL</p>
-  <p><strong>Referência:</strong> Maior que 25 mUI/mL = Positivo</p>
-  <p><strong>Data da coleta:</strong> 18/07/2025</p>
-  <hr />
-  <p style="text-align: right; font-style: italic;">Dr. Fulano de Tal - CRM 000000</p>
+<body>
+  <div class="container">
+    <h1>Resultado disponível</h1>
+    <p>O resultado do seu exame já está disponível.</p>
+
+    <!-- Se quiser exibir um botão: -->
+    <a class="botao" href="laudo_T240012114402.pdf" target="_blank">Clique aqui para ver o PDF</a>
+
+    <!-- Ou se quiser exibir o PDF embutido diretamente: -->
+    <!-- <iframe src="resultado.pdf"></iframe> -->
+  </div>
 </body>
 </html>
